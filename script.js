@@ -25,5 +25,6 @@ function convertToRoman(num) {
     }
   }
 
-  return result;
+  console.log(result); 
+  return result;       
 }
