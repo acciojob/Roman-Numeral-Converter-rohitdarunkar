@@ -16,6 +16,7 @@ function convertToRoman(num) {
   ];
 
   let result = '';
+  num = Number(num); 
 
   for (let i = 0; i < values.length; i++) {
     while (num >= values[i][1]) {
@@ -24,5 +25,6 @@ function convertToRoman(num) {
     }
   }
 
-  return result;
+  console.log(result); // ✅ REQUIRED
+  return result;       // optional but safe
 }
